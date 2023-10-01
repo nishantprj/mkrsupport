@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300&display=swap');
+*{
+    font-family:'Inter';
+}
+.containercustom1{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.title{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.row1{
+    text-decoration: none;
+    margin: 12px 0 12px 0;
+    padding: 15px 20px 15px 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.row1:hover{
+    background-color: rgb(228, 241, 252);
+    cursor: pointer;
+}
+
+.row1 h4{
+    text-decoration: none;
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+
+
+.row1 p{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: rgb(112, 112, 112);
+}
+
+.backbutton{
+    border: none;
+    background-color: none;
+    background: none;
+    align-items: center;
+    color: #036EE4;
+}
+.backbutton:hover{
+    color: #094b91;
+}
+
+@media (max-width: 768px){
+    .row1 h4{
+        font-size: 16px;
+    }
+}
