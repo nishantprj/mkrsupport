@@ -105,8 +105,8 @@
 
 @media (max-width: 768px){
     #main-container_xxl{
-        padding-top: 0.2rem;
-        padding-bottom: 0.2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     .row1 h4{
         font-size: 16px;
