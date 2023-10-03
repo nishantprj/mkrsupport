@@ -87,7 +87,7 @@
 }
 
 .imgmob{
-    width:100%; max-width: 250px; height: auto; margin: 5px 0 20px 0; outline: 1px solid #d3d3d3; border-radius: 5px; box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05); display: block; margin: 10px auto;
+    width:100%; max-width: 250px; height: auto; margin: 5px 0 20px 0; outline: 1px solid #d3d3d3; border-radius: 15px; box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05); display: block; margin: 10px auto;
 }
 
 .imgmedium{
