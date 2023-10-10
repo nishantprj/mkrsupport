@@ -66,6 +66,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -88,7 +89,7 @@ i{
 @media (max-width: 768px){
     i{display: none;}
     .row1{
-        padding: 15px 20px 15px 20px;
+        padding: 15px;
     }
     .row1:hover i{
     display: none;
@@ -127,7 +128,7 @@ i{
 	</nav>
 
 
-    <div class="d-flex text-center" lc-helper="background" style="min-height: 30vh; background-size:cover; background-position: center center;background-color:#eee;background-image: url(https://images.mykidreports.com/SchoolWebPage/Frame-26-1694419864.png);">
+    <div class="d-flex text-center" lc-helper="background" style="min-height: 30vh; background-size:cover; background-position: center center;background-color:#eee;background-image: url('media_assets/background_img.svg');">
         <div class="lc-block  my-3 align-self-center w-100 py-5">
             <div editable="rich justify-content-center">
                 <h2 class="display-5 px-3 pb-2" style="color: rgb(0, 0, 0); font-weight: 500;">How can we help you?</h2>
@@ -140,6 +141,10 @@ i{
                         </div>
                     </form> -->
                 </div>
+                <!-- <div class="ui-widget">
+                    <label for="tags">Tags: </label>
+                    <input id="tags">
+                </div> -->
             </div>
         </div>
     </div>
@@ -273,6 +278,48 @@ i{
                     <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
                 </div>
             </a>
+
+            <h5 style="font-family: 'Poppins'; font-weight: 600; margin: 25px 0 5px 0; color:#000000">Billing</h5>
+
+            <a class="article-link" href="setup-billing-for-your-center.html" style="text-decoration: none;">
+                <div class="row1">
+                    <h4 style="font-weight: 600; font-size: 16px;">Setup Billing for your center and automate invoices for children</h4>
+                    <p>Billing</p>
+                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
+                </div>
+            </a>
+
+            <a class="article-link" href="how-to-setup-online-payments-for-your-center.html" style="text-decoration: none;">
+                <div class="row1">
+                    <h4 style="font-weight: 600; font-size: 16px;">How to setup online payments for your center?</h4>
+                    <p>Billing</p>
+                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
+                </div>
+            </a>
+            
+            <a class="article-link" href="how-can-parents-automatially-pay-fee-on-time.html" style="text-decoration: none;">
+                <div class="row1">
+                    <h4 style="font-weight: 600; font-size: 16px;">How can Parents Automatially Pay Fee on Time?</h4>
+                    <p>Billing</p>
+                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
+                </div>
+            </a>
+            
+            <a class="article-link" href="how-can-parents-get-their-statements.html" style="text-decoration: none;">
+                <div class="row1">
+                    <h4 style="font-weight: 600; font-size: 16px;">How can Parents get their Statement?</h4>
+                    <p>Billing</p>
+                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
+                </div>
+            </a>
+
+            <a class="article-link" href="how-can-parents-pay-their-bills-through-app-and-website.html" style="text-decoration: none;">
+                <div class="row1">
+                    <h4 style="font-weight: 600; font-size: 16px;">How can parents pay their bills through app & website?</h4>
+                    <p>Billing</p>
+                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
+                </div>
+            </a>
 <!--
             <a class="article-link" href="how-to-setup-autopay.html" style="text-decoration: none;">
                 <div class="row1">
@@ -311,7 +358,7 @@ i{
     </section>
 
 
-    <script>
+    <!-- <script>
         $('#myInput').on('input', function() {
             let name = $(this).val()
             $('.article-link').each(function() {
@@ -334,6 +381,38 @@ i{
         window.addEventListener("beforeunload", () => {
         localStorage.setItem("sidebar-scroll", sidebar.scrollTop);
         });
+    </script> -->
+
+    <script>
+    var $ = jQuery;
+    $( function() {
+        var availableTags = [
+        {value:"ActionScript", link:''},
+        {value:"AppleScript",link:'https://google.com'},
+        {value:"Asp",link:'https://google.com'},
+        {value:"BASIC",link:'https://google.com'},
+        {value:"C",link:'https://google.com'},
+        {value:"C++",link:'https://google.com'},
+        {value:"Clojure",link:'https://google.com'},
+        {value:"COBOL",link:'https://google.com'},
+        {value:"ColdFusion",link:'https://google.com'},
+        {value:"Erlang",link:'https://google.com'},
+        {value:"Fortran",link:'https://google.com'},
+        {value:"Groovy",link:'https://google.com'},
+        {value:"Haskell",link:'https://google.com'},
+        {value:"Java",link:'https://google.com'},
+        {value:"JavaScript",link:'https://google.com'},
+        {value:"Lisp",link:'https://google.com'},
+        
+        ];
+        $( "#tags" ).autocomplete({
+        source: availableTags,
+        select: function( event, ui ) {
+            console.log(ui.item.link);
+            window.location.replace(ui.item.link)
+        }
+        });
+    } );
     </script>
 
 <!-- 
