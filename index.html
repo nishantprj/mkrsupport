@@ -26,70 +26,46 @@
     margin: 0 auto;
 }
 
-.title{
-    margin-bottom: 40px;
-}
-
-.row1{
-    position: relative;
-    text-decoration: none;
-    margin: 12px 0 12px 0;
-    padding: 15px 30px 15px 20px;
+.titlecard{
+    padding: 20px 15px;
     outline: 1px solid #d3d3d3;
-    border-radius: 5px;
-}
+    border-radius: 7px;
+    text-align: center;
+    height: 100%;
 
-.row1:hover{
-    outline: 2px solid #036EE4;
-    background-color: rgb(228, 241, 252);
-    cursor: pointer;
 }
 
 
-
-.row1 h4{
-    text-decoration: none;
-    margin: 0;
-    padding-bottom: 5px;
-    font-size: 18px;
-    font-weight: 500;
-    color: black;
-}
-
-
-.row1 p{
-    text-decoration: none;
-    margin: 0;
+.titlecard h5{
     padding: 0;
+    font-family: 'Arial';
+    margin: 0 0 10px 0;
     font-size: 16px;
-    color: rgb(112, 112, 112);
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    line-height: 20px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.titlecard p{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
 }
 
-i{
-    font-size:24px;
-    padding:1px 0px 0 13px; color: #036EE4;
-    position: absolute;
-    top: 50%;
-    visibility: hidden;
-    transform: translateY(-50%);
-    right: 16px;
+.titlecard:hover{
+    outline: 2px solid #036EE4;
+}
+.titlecard:hover h5{
+    color: #036EE4;
 }
 
-.row1:hover i{
-    visibility: visible;
+.cardlink{
+    text-decoration: none;
 }
-
 
 @media (max-width: 768px){
     i{display: none;}
     .row1{
-        padding: 15px;
+        padding: 15px 20px 15px 20px;
     }
     .row1:hover i{
     display: none;
@@ -117,248 +93,175 @@ i{
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar1" aria-controls="myNavbar1" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="myNavbar1">
-				<div lc-helper="shortcode" class="live-shortcode me-auto"> <!--  lc_nav_menu --> <ul id="menu-menu-1" class="navbar-nav me-auto mb-2 mb-md-0 navbar-nav"></ul> <!-- /lc_nav_menu --> </div>
-				<a class="navbar-text text-decoration-none" href="https://app.mykidreports.com/login"> 
-			    Go to your account
-
-				</a>
+			<div class="collapse navbar-collapse " id="myNavbar1">
+                
+				<div lc-helper="shortcode" class="live-shortcode me-auto"> <!--  lc_nav_menu --> 
+                    <ul id="menu-menu-1" class="navbar-nav me-auto mb-2 mb-md-0 navbar-nav"></ul> <!-- /lc_nav_menu --> 
+                </div>
+				        <a class="navbar-text text-decoration-none" href="https://app.mykidreports.com/login"> 
+			                Go to your account
+				        </a>
 			</div>
 		</div>
 	</nav>
 
 
-    <div class="d-flex text-center" lc-helper="background" style="min-height: 30vh; background-size:cover; background-position: center center;background-color:#eee;background-image: url('media_assets/background_img.svg');">
+    <div class="d-flex text-center" lc-helper="background" style="min-height: 20vh; background-size:cover; background-position: center center;background-color:#eee;background-image: url(https://images.mykidreports.com/SchoolWebPage/Frame-26-1694419864.png);">
         <div class="lc-block  my-3 align-self-center w-100 py-5">
             <div editable="rich justify-content-center">
-                <h2 class="display-5 px-3 pb-2" style="color: rgb(0, 0, 0); font-weight: 500;">How can we help you?</h2>
+                <h2 class="display-5 px-3" style="color: rgb(0, 0, 0); font-weight: 500;">How can we help you?</h2>
                 <div class="md-form mt-0 px-3" style="width: 100%; max-width: 600px; margin: 0 auto; ">
-                    <input class="form-control" id="myInput" type="text" placeholder="Search" aria-label="Search">
-                    <!-- <form autocomplete="off">
-                        <label for="input">My favorite fruit:</label>
-                        <div>            
-                            <input type="text" id="tags">
-                        </div>
-                    </form> -->
+                    <!-- <input class="form-control" id="myInput" type="text" placeholder="Search" aria-label="Search"> -->
+                   
                 </div>
-                <!-- <div class="ui-widget">
-                    <label for="tags">Tags: </label>
-                    <input id="tags">
-                </div> -->
             </div>
         </div>
     </div>
  
   
-    <div class="container-xxl py-5">
-        
-        
-        <div class="containercustom1">
-               
-            <div class="title">
-                <h3>MyKidReports Help For School</h3>
-                    Quick Answers to Frequently Asked Questions
-            </div>
-
-            <div id="search">
-            <a class="article-link" href="getting-started-setup-your-center-for-success.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">Getting Started with MyKidReports - Setup your center for success</h4>
-                    <p>Setup your Center add rooms, staff, children and manage activities you do in yoour school</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-                
-            </a>
-
-            <a class="article-link" href="how-can-I-change-the-timezone-of-my-school.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">How can I change the timezone of my school?</h4>
-                    <p>Easily change timezone according to your location.</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a>
-
-            <a class="article-link" href="how-can-I-customize-emails.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">How can I customize emails?</h4>
-                    <p>Add your own words in emails.</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a>
-
-
-            <h5 style="font-family: 'Poppins'; font-weight: 600; margin: 25px 0 5px 0; color:#000" id="checkin">Check-in</h5>
-            <a class="article-link" href="how-can-staff-and-children-checkin-to-your-school.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">How can Staff & Children Check-in to your school?</h4>
-                    <p>Effortless Check-In: Staff and Children's Arrival Made Simple!</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a>
-
-            <a class="article-link" href="check-attendence-report.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">Check Attendance Reports</h4>
-                    <p>Attendance Insights at a Glance.</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a>
-
-            <a class="article-link" href="how-to-edit-checkin-hours-for-staff-and-children.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">How to edit Check-in hours for Staff and Children?</h4>
-                    <p>Editing Check-in Hours made easy</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a>
-
-            <a class="article-link" href="how-can-staff-see-their-hours-worked-for-a-given-week.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">How can staff see their hours worked for a given week?</h4>
-                    <p>Empowering Staff: Easily Monitor Weekly Work Hours.</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a>
-
-            <a class="article-link" href="easily-create-and-publish-staff-schedule.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">Easily create and publish staff schedule</h4>
-                    <p>Streamline Your Staff Management with Effortless Scheduling!</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a>
-
-            <h5 style="font-family: 'Poppins'; font-weight: 600; margin: 25px 0 5px 0; color:#000">Communication</h5>
-            <a class="article-link" href="how-can-school-send-messages-to-parents.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">How can school send messages to parents?</h4>
-                    <p>Unlock Seamless Parent-School Communication</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a>
-
-            <a class="article-link" href="how-can-parent-send-messages-to-school.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">How can parents send messages to school/teachers?</h4>
-                    <p>Step toward better communication</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a>
-
-            <!-- <a class="article-link" href="how-can-parent-send-messages-to-teacher.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">How can parents send messages to teacher?</h4>
-                    <p>Learn how to conveniently download and print your child's financial statements with MyKidReports.</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a> -->
-
-            <h5 style="font-family: 'Poppins'; font-weight: 600; margin: 25px 0 5px 0; color:#000000">MyKidReports Moblie App</h5>
-
-            <a class="article-link" href="what-school-can-do-from-mykidreports-mobile-app.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">What school can do from MyKidReports mobile app?</h4>
-                    <p>Empower Your School with MyKidReports: Unleash the Potential of Mobile Convenience!</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a>
-
-            <a class="article-link" href="what-parents-can-do-from-their-mykidreports-mobile-app.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">What can parents do from their MyKidReports mobile app?</h4>
-                    <p>Empower Parents with MyKidReports Mobile App: Discover Their Key Capabilities!</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a>
-
-            <a class="article-link" href="what-teacher-can-do-from-their-mykidreports-mobile-app.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">What can teacher do from their MyKidReports mobile app?</h4>
-                    <p>Empowering Teachers: Unleash the Full Potential of MyKidReports Mobile App!</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a>
-
-            <h5 style="font-family: 'Poppins'; font-weight: 600; margin: 25px 0 5px 0; color:#000000">Billing</h5>
-
-            <a class="article-link" href="setup-billing-for-your-center.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">Setup Billing for your center and automate invoices for children</h4>
-                    <p>Billing</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a>
-
-            <a class="article-link" href="how-to-setup-online-payments-for-your-center.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">How to setup online payments for your center?</h4>
-                    <p>Billing</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a>
-            
-            <a class="article-link" href="how-can-parents-automatially-pay-fee-on-time.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">How can Parents Automatially Pay Fee on Time?</h4>
-                    <p>Billing</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a>
-            
-            <a class="article-link" href="how-can-parents-get-their-statements.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">How can Parents get their Statement?</h4>
-                    <p>Billing</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a>
-
-            <a class="article-link" href="how-can-parents-pay-their-bills-through-app-and-website.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">How can parents pay their bills through app & website?</h4>
-                    <p>Billing</p>
-                    <i class="fa" id="cardarrow" style="font-size: 24px;">&#xf105;</i>
-                </div>
-            </a>
-<!--
-            <a class="article-link" href="how-to-setup-autopay.html" style="text-decoration: none;">
-                <div class="row1">
-                    <h4 style="font-weight: 600; font-size: 16px;">How to Setup Autopay?</h4>
-                    <p>Learn how to streamline your childcare payments by setting up autopay for your child's program.</p>
-                </div>
-            </a> -->
-            </div>
-
-            
-        </div>
-    </div>
-
  
   
-
-
     
-    <section>
-        <div class="container py-6">
-            <div class="lc-block d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <div class="col-md-4">
-                    <div editable="rich">
-                        <p class="text-muted">Copyright 2023 MyKidReports. All Rights Reserved</p>
-                    </div>
-                </div><!-- /lc-block -->
-                <div class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto col-md-4">
+    <div class="container mb-4" style="max-width: 1000px;">
+        <div class="row">
+            <div class="title mt-4">
+                <h3>MyKidReports Help For School</h3>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 mb-4">
+                <a href="setup-guide-for-schools.html" class="cardlink">
+                
+                <div class="titlecard">
+                    <img src="media_assets/guide.svg" alt="" style="width: 3.5rem; height: 3.5rem; margin-bottom: 15px;">
+                    <h5 style="font-family: 'Inter';">Setup Guide for Schools</h5>
+                    <p>Set up and manage your rooms, students, student contacts, staff, and so much</p>
+                </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="check-in.html" class="cardlink">
+                <div class="titlecard">
+                    <img src="media_assets/checkin.svg" alt="" style="width: 3.5rem; height: 3.5rem; margin-bottom: 15px;">
+                    <h5 style="font-family: 'Inter';">Check-In</h5>
+                    <p>Effortless Check-In: Staff and Children's Arrival Made Simple!</p>
+                </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="communication.html" class="cardlink">
+                <div class="titlecard">
+                    <img src="media_assets/communication.svg" alt="" style="width: 3.5rem; height: 3.5rem; margin-bottom: 15px;">
+                    <h5 style="font-family: 'Inter';">Communication</h5>
+                    <p>Unlock Seamless Parent-School Communication</p>
+                </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="mykidreports-mobile-app.html" class="cardlink">
+                <div class="titlecard">
+                    <img src="media_assets/app.svg" alt="" style="width: 3.5rem; height: 3.5rem; margin-bottom: 15px;">
+                    <h5 style="font-family: 'Inter';">MyKidReports Mobile App</h5>
+                    <p>Empower Your School with MyKidReports: Unleash the Potential of Mobile Convenience!</p>
+                </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="mykidreports-billing.html" class="cardlink">
+                <div class="titlecard">
+                    <img src="media_assets/billing.svg" alt="" style="width: 3.5rem; height: 3.5rem; margin-bottom: 15px;">
+                    <h5 style="font-family: 'Inter';">Billing</h5>
+                    <p>Establishing Billing Systems and Streamlining Automated Invoices for your Centers</p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+     
+     
+      
+ 
+  
+
+     
+  
+    
+<section>
+	<div class="container py-6 text-center border-top">
+        <div class="row justify-content-center pt-3">
                     <div class="lc-block text-center">
                         <a class="navbar-brand" href="https://mykidreports.com/">
                             <img class="img-fluid me-1" src="https://images.mykidreports.com/SchoolWebPage/logo-1678086307.webp" alt="my brand" width="auto" height="55px">
                         </a>
                     </div>
                 </div>
+
+                <div style="column-gap: 15px; display: flex; justify-content: center; margin: 0 auto;">
+                    <div class="cont" style="margin: 15px auto 0px auto;">
+                        <td style="text-align:center;"> <a href="https://apps.apple.com/in/app/my-kid-reports/id1613665844" rel="noopener noreferrer" style="color:#0a66c2;display:inline-block;text-decoration:none; object-fit: contain;" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://itunes.apple.com/us/app/linkedin/id288429040?pt%3D10746%26ct%3Dst_appsite_flagship%26mt%3D8&amp;source=gmail&amp;ust=1692008691646000&amp;usg=AOvVaw3RYFcuGe6Cw4hx_g30Rqlt"> <img alt="Download on the App Store" src="https://ci6.googleusercontent.com/proxy/HrtBTHlFE3VpRkzLfRwnYbJjCLtCpmKOIV__qk9k9mj7e7PSZF2X0L7mzR63nCIfqbnUujbn-dhiq-LwYUqdcpSLg_ItRhdEQJ0wP438309hcA=s0-d-e1-ft#https://static.licdn.com/aero-v1/sc/h/76yzkd0h5kiv27lrd4yaenylk" style="outline:none;text-decoration:none;height:40px;width:134px;" width="134" height="40" class="CToWUd" data-bit="iit"> </a> <a href="https://play.google.com/store/apps/details?id=com.myKidReportsNew.app" rel="noopener noreferrer" style="color:#0a66c2;display:inline-block;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://play.google.com/store/apps/details?id%3Dcom.linkedin.android%26referrer%3Dst_appsite_flagship&amp;source=gmail&amp;ust=1692008691646000&amp;usg=AOvVaw1mg1A6kzW0tt5rLwYkneCy"> <img alt="Get it on Google Play" src="https://ci4.googleusercontent.com/proxy/HO9_iWlKcrB0dwBjkxwmI_XENGKaxTdCz3hYTg8EEfaANhsLV5O5f61PZoWBJ67aU2WPYH0Fi62BGEAYtInwMztgR5OV0aDg3es9eJDYUrhOVw=s0-d-e1-ft#https://static.licdn.com/aero-v1/sc/h/142qudwblp58zwmc9vkqfplug" style="outline:none;text-decoration:none;height:40px;width:134px" width="134" height="40" class="CToWUd" data-bit="iit"> </a> </td>
+                    </div>
+                </div>
+                
+		<div class="col-md-12 navbar-expand pb-2 mb-1 mt-3">
+			<div lc-helper="shortcode" class="live-shortcode "> <!--  lc_nav_menu --> 
+                <ul id="menu-menu-1" class="navbar-nav me-auto mb-2 mb-md-0 d-block d-md-flex justify-content-center">
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739">
+                        <a href="https://mykidreports.com/" target="_blank" class="nav-link" style="color: black;">MyKidReports Website</a></li>
+                    
+                </ul> <!-- /lc_nav_menu --> </div>
+		</div>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-4 justify-content-center d-flex gap-3">
+                <div class="lc-block">
+
+                    <a href="https://www.facebook.com/MyKidReports" target="_blank">
+                        <i style="font-size: 18px; color: rgb(33, 33, 33);" class="fa fa-facebook"></i>
+                    </a>
+
+                </div>
+                <div class="lc-block">
+
+                    <a href="https://www.youtube.com/channel/UCIIfvJde5NvJ4ksIHrMVSTg" target="_blank">
+                        <i style="font-size: 18px; color: rgb(33, 33, 33);" class="fa fa-youtube-play"></i>
+                    </a>
+
+                </div>
+                <div class="lc-block">
+
+                    <a href="https://twitter.com/mykidreports" target="_blank">
+                        <i style="font-size: 18px; color: rgb(33, 33, 33);" class="fa fa-twitter"></i>
+                    </a>
+
+                </div>
+
+                <div class="lc-block">
+
+                    <a href="https://www.instagram.com/mykidreports" target="_blank">
+                        <i style="font-size: 18px; color: rgb(33, 33, 33);" class="fa fa-instagram"></i>
+                    </a>
+
+                </div>
             </div>
         </div>
-    </section>
 
+		<div class="lc-block pt-3">
+			<div editable="rich">
+				<p class="text-muted">Copyright 2023 MyKidReports. All Rights Reserved</p>
 
-    <!-- <script>
+			</div>
+		</div>
+	</div>
+
+</section>
+ 
+ 
+  
+    
+    
+
+<!-- 
+    <script>
         $('#myInput').on('input', function() {
             let name = $(this).val()
             $('.article-link').each(function() {
@@ -382,7 +285,7 @@ i{
         localStorage.setItem("sidebar-scroll", sidebar.scrollTop);
         });
     </script> -->
-
+<!-- 
     <script>
     var $ = jQuery;
     $( function() {
@@ -413,7 +316,7 @@ i{
         }
         });
     } );
-    </script>
+    </script> -->
 
 <!-- 
 <script>
